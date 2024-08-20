@@ -6,7 +6,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 import gspread as gc
 
 # Load the Excel file
-df = pd.read_csv('https://docs.google.com/spreadsheets/d/16LFFeOBBlJtCbbxTv2zawuHoSuQnzjzH/pub?gid=423142265&single=true&output=csv',
+df = pd.read_csv('https://docs.google.com/spreadsheets/d/1zN9TD34nBWxIjSELOacF5CuTGIH1Pcak/pub?output=csv',
                    header=0,
                   )
 
@@ -22,7 +22,7 @@ current_word = None
 correct_answer = None
 correct_count = 0
 question_count = 0
-total_questions = 5  # Number of words to check
+total_questions = 20  # Number of words to check
 token = data["token"]
 
 # Start the quiz
