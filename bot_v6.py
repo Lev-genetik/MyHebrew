@@ -58,7 +58,7 @@ def handle_answer(update: Update, context: CallbackContext) -> None:
     global question_count
     answer = update.message.text.strip() 
     # Check if the answer is correct
-    if answer == correct_answer:
+    if answer == correct_answer.strip():
         correct_count += 1
         update.message.reply_text("Correct!")
     else:
