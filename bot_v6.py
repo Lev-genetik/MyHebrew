@@ -6,7 +6,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 import gspread as gc
 
 # Load the Excel file
-test = pd.read_csv('https://docs.google.com/spreadsheets/d/16LFFeOBBlJtCbbxTv2zawuHoSuQnzjzH/pub?gid=423142265&single=true&output=csv',
+df = pd.read_csv('https://docs.google.com/spreadsheets/d/16LFFeOBBlJtCbbxTv2zawuHoSuQnzjzH/pub?gid=423142265&single=true&output=csv',
                    header=0,
                   )
 
